@@ -236,7 +236,7 @@ class Socket(socket.socket):
         try:
             throwaway = self.getpeername()
             return True
-        except (socket.error, ), ex:
+        except socket.error as ex:
             return False
         
 
