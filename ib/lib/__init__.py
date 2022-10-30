@@ -158,7 +158,7 @@ class Double(float):
     """
     ##
     # sentinel value used by the socket writer
-    MAX_VALUE = sys.maxint
+    MAX_VALUE = sys.maxsize
 
     @staticmethod
     def parseDouble(text):
@@ -176,7 +176,7 @@ class Integer(int):
     """
     ##
     # sentinel value used by the socket writer
-    MAX_VALUE = sys.maxint
+    MAX_VALUE = sys.maxsize
 
     @staticmethod
     def parseInt(text):
