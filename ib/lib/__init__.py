@@ -385,7 +385,7 @@ class Thread(ThreadType):
 
     def term(self):
         def isInterrupted():
-            print 'down town'
+            print('down town')
             return True
         self.isInterrupted = isInterrupted
         self.m_dis.stream.shutdown(socket.SHUT_RDWR)
